@@ -1,20 +1,20 @@
 
-import java.util.Scanner;
-public class calculator {
+import java.util.Scanner;//Importing Scanner class to get data from user
+public class calculator {// Declaring the Class 
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int a,b,c,d;
-		System.out.println("Enter your choice 1 (ADD) 2 (SUB) 3(MULT) 4 (DIV) 5 (REMAINDER)");
-		a = sc.nextInt();
-		if (a == 1) {
+	public static void main(String[] args) {//Declaring the function
+		Scanner sc = new Scanner(System.in);// Creating new object to get user Data
+		int a,b,c,d;// Declaring Variables to store the user data
+		System.out.println("Enter your choice 1 (ADD) 2 (SUB) 3(MULT) 4 (DIV) 5 (REMAINDER)");//*
+		a = sc.nextInt();// Gets the user input and stores it in variable a 
+		if (a == 1) {// Loop statement used to calculate as per user choice .
 			System.out.println("Enter 1st number");
 			b = sc.nextInt();
 			System.out.println("Enter 2nd number");
 			c = sc.nextInt();
 			
-			d= b+c;
-			System.out.println("The answer is " + d);
+			d= b+c;// Adds the two numbers 
+			System.out.println("The answer is " + d);//Gives the output 
 		}
 		else if (a == 2) {
 			System.out.println("Enter 1st number");
@@ -22,7 +22,7 @@ public class calculator {
 			System.out.println("Enter 2nd number");
 			c = sc.nextInt();
 			
-			d= b-c;
+			d= b-c;// Subtracts the two numbers
 			System.out.println("The answer is " + d);
 		}
 		else if (a == 3) {
@@ -31,7 +31,7 @@ public class calculator {
 			System.out.println("Enter 2nd number");
 			c = sc.nextInt();
 			
-			d= b*c;
+			d= b*c;// multiplies the two numbers
 			System.out.println("The answer is " + d);
 		}
 		else if (a == 4) {
@@ -40,7 +40,7 @@ public class calculator {
 			System.out.println("Enter 2nd number");
 			c = sc.nextInt();
 			
-			d= b/c;
+			d= b/c;// divides the two numbers
 			System.out.println("The answer is " + d);
 		}
 		else if (a == 5) {
@@ -49,14 +49,17 @@ public class calculator {
 			System.out.println("Enter 2nd number");
 			c = sc.nextInt();
 			
-			d= b%5c;
+			d= b%5;//divides the two numbers , but outputs the remainder.
 			System.out.println("The answer is " + d);
 		}
 		else {
 			System.out.println("The choice is wrong ! Enter different choice ");
+		//* If the user chose a diffrent choice from the above code(the star one ),it will not get any data from user.
+			
+			
 		}
 	
-		
+		sc.close();
 
 	}
 
