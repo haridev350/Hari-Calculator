@@ -5,7 +5,7 @@ public class calculator {// Declaring the Class
 	public static void main(String[] args) {//Declaring the function
 		Scanner sc = new Scanner(System.in);// Creating new object to get user Data
 		double  b,c,d;// Declaring Variables to store the user data.
-		System.out.println("Welcome to Hari Calculator v2.2!");
+		System.out.println("Welcome to Hari Calculator v2.3!");
 		System.out.println("Enter your choice 1 (ADD),2 (SUB),3(MULT),4 (DIV) and 5 (REMAINDER)");//*
 		int a = sc.nextInt();// Gets the user input and stores it in variable a 
 		if (a == 1) {// Loop statement used to calculate as per user choice .
